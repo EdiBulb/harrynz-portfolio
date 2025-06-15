@@ -2,18 +2,18 @@ import React from "react";
 
 const certificates = [
   {
-    title: "Flutter & Dart - The Complete Guide",
+    title: "The Complete Flutter Development Bootcamp with Dart, Udemy",
     provider: "Udemy",
     period: "2024.03 – 2024.06",
     image: "/certificates/flutter_udemy.png", // public 폴더 안에 위치
-    description: "Built several apps including a quiz app and random menu app.",
+    description: "Built several Flutter apps including a Chating app and BMI Calculation app.",
     projects: [
       {
-        name: "Random Menu App",
+        name: "Chating App",
         link: "https://github.com/your-username/random-menu-app",
       },
       {
-        name: "Quiz App",
+        name: "BMI Calculation App",
         link: "https://github.com/your-username/flutter-quiz-app",
       },
     ],
@@ -23,33 +23,27 @@ const certificates = [
     provider: "Udemy",
     period: "2024.05 – 2024.06",
     image: "/certificates/JavaScript_udemy.png", // public 폴더 안에 위치
-    description: "Built several apps including a quiz app and random menu app.",
+    description: "Built random Card Memory Game",
     projects: [
       {
-        name: "Random Menu App",
+        name: "Random Card Memory Game",
         link: "https://github.com/your-username/random-menu-app",
       },
-      {
-        name: "Quiz App",
-        link: "https://github.com/your-username/flutter-quiz-app",
-      },
+      
     ],
   },
   {
     title: "The Ultimate React Course 2025: React, Next.js, Redux & More",
     provider: "Udemy",
     period: "2024.06 – 2024.06",
-    image: "/certificates/flutter_udemy.png", // public 폴더 안에 위치
+    image: "", // public 폴더 안에 위치
     description: "Built several apps including a quiz app and random menu app.",
     projects: [
       {
-        name: "Random Menu App",
+        name: "On going",
         link: "https://github.com/your-username/random-menu-app",
       },
-      {
-        name: "Quiz App",
-        link: "https://github.com/your-username/flutter-quiz-app",
-      },
+      
     ],
   }
 ];

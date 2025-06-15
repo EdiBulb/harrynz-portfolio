@@ -4,8 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        fade: "fadeIn 2s ease-out forwards",
+      },
+    },
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   plugins: [],
 }

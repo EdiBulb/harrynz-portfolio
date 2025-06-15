@@ -2,23 +2,24 @@ import React from "react";
 
 const projects = [
   {
-    title: "Random Menu App",
-    description: "A Flutter app that helps you pick what to eat with a spinning wheel.",
-    tech: ["Flutter", "Dart"],
+    title: "Intelligent Sports Management Platform (Ongoing)",
+    description: "the development of a culturally responsive sports management web platform using React, Django, and MySQL, with features like AI-based performance analysis and identity verification",
+    tech: ["React.js", "Django", "MySQL", "REST API", "Tailwind CSS", "Axios", "Agile"],
     github: "https://github.com/your-username/random-menu-app",
   },
   {
-    title: "Bus Stop App",
+    title: "SeamlessStop – Intelligent Bus Stop Automation System",
     description: "ITS project using GPS to help passengers choose drop-off stops.",
-    tech: ["React", "Node.js", "Express"],
+    tech: ["React", "Node.js", "Django", "MySQL", "SUMO Simulation", "API Integration"],
     github: "https://github.com/your-username/bus-stop-app",
   },
   {
-    title: "YouTube Channel",
-    description: "A personal content project sharing my journey in NZ.",
-    tech: ["Video Editing", "KineMaster", "YouTube Studio"],
-    github: "https://www.youtube.com/@harrynz",
+    title: "Haerenga Travel Agency System",
+    description: "Built core user-facing and admin features for a web-based travel booking system using PHP and MySQL, with Agile methodology and cultural design principles in mind",
+    tech: ["PHP", "MySQL", "HTML/CSS/JavaScript", "Agile", "Git", "Trello"],
+    github: "https://github.com/your-username/bus-stop-app",
   },
+  
 ];
 
 const Portfolio = () => {
