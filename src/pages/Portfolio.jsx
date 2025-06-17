@@ -19,6 +19,12 @@ const projects = [
     tech: ["PHP", "MySQL", "HTML/CSS/JavaScript", "Agile", "Git", "Trello"],
     github: "https://github.com/your-username/bus-stop-app",
   },
+  {
+    title: "Crazy Rock Scissor Paper Game",
+    description: "Built not normal rock scissor paper game, it has special features using React",
+    tech: ["React", "HTML/CSS/JavaScript", "Git"],
+    github: "https://edibulb.github.io/react-rockscissorpaper/",
+  }
   
 ];
 
