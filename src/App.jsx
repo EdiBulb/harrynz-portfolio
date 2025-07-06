@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navbar />
       <div id="home"><Home/></div>
-
+      
       <section className="h-24 bg-gradient-to-b from-gray-900 to-gray-100" />
 
       <div id="about"><About/></div>

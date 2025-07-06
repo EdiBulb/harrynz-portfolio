@@ -10,14 +10,14 @@ const Home = () => {
           I'M HARRY
         </h1>
         <h3 className="text-xl md:text-2xl text-blue-300 animate-fade">
-          Developer | Dreamer | Creator
+          Developer | Explorer | Creator
         </h3>
       </div>
 
       {/* image */}
       <div className="flex-1 mb-10 md:mb-0">
         <img
-          src="/profile/home_profile.png"
+          src="/profile/Harry_coding_image.png"
           alt="Developer Illustration"
           className="w-72 md:w-96 object-contain rounded-full"
         />

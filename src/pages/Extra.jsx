@@ -4,35 +4,28 @@ const activities = [
   {
     title: "Nepal Volunteer Trip",
     year: "2016",
-    image: "/activities/nepal.jpg",
+    image: "/activities/harry_nepal.jpg",
     description:
       "Participated in a volunteer program in Nepal, teaching children and helping with community projects. This experience sparked my interest in social contribution.",
   },
   {
     title: "Exchange Student in China",
     year: "2019",
-    image: "/activities/china.jpg",
+    image: "/activities/harry_china.png",
     description:
       "Studied in China as an exchange student. Improved my Chinese language skills and experienced cultural diversity.",
   },
   {
-    title: "Software Development Competition(Undergraduate, 2022)",
-    year: "2022",
-    image: "/activities/china.jpg",
-    description:
-      "Collaborated in a 3-member team to build a mobile app prototype under time constraints. Improved teamwork, technical problem-solving, and rapid ideation skills.",
-  },
-  {
     title: "Working Holiday in New Zealand",
     year: "2023",
-    image: "/activities/nz.jpg",
+    image: "/activities/harry_working_holiday.jpg",
     description:
       "Moved to New Zealand through a working holiday visa. Gained valuable life experience and decided to study software engineering here.",
   },
   {
     title: "YouTube Channel",
     year: "2023",
-    image: "/activities/nz.jpg",
+    image: "/activities/harry_youtube.png",
     description:
       "Vloging my Life in New Zealand.",
   },
