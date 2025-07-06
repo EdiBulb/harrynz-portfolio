@@ -36,7 +36,7 @@ const certificates = [
     title: "The Ultimate React Course 2025: React, Next.js, Redux & More",
     provider: "Udemy",
     period: "2024.06 – 2024.06",
-    image: "", // public 폴더 안에 위치
+    image: "/certificates/react_udemy.jpg", // public 폴더 안에 위치
     description: "Built several apps including a quiz app and random menu app.",
     projects: [
       {

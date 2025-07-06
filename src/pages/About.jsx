@@ -3,7 +3,9 @@ import { MdEmail } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className="max-w-5xl mx-auto mt-10 px-4 text-gray-800">
+
+    <section className="pt-24 pb-12 bg-gray-100 dark:bg-gray-800">
+      <div className="max-w-4xl mx-auto px-4">
       <h1 className="text-3xl font-bold mb-6 border-b-2 pb-2 border-blue-500">
         About Me
       </h1>
@@ -14,12 +16,11 @@ const About = () => {
         {/* 텍스트 소개 */}
         <div>
           <p className="text-lg leading-relaxed">
-            Hello! I'm <span className="font-semibold text-blue-600">Harry Kang</span>, a passionate software engineering student based in New Zealand 🇳🇿.
-            I love building modern mobile/web apps using Flutter, React, and Firebase.
+            I'm <span className="font-semibold text-blue-600">Full-stack developer</span> living in New Zealand, passionate about building with React, Node.js, and DevOps tools. I love creating things that work
           </p>
 
           <p className="mt-4 text-lg">
-            I'm currently building real-world portfolio projects and preparing for a graduate developer role. I believe that opportunities aren’t given, they’re created.
+            I believe that opportunities aren’t given, they’re created.
           </p>
 
           <p className="mt-4 text-lg italic text-gray-500">
@@ -57,6 +58,9 @@ const About = () => {
         </a>
       </div>
     </div>
+    </section>
+
+  
   );
 };
 
