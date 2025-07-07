@@ -22,12 +22,12 @@ jobs:
 
       - name: Build project
         run: npm run build
-
-      - name: Deploy to GitHub Pages
         env:
           CI: false
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
         run: |
           git config --global user.email "gnsqud24@naver.com"
           git config --global user.name "EdiBulb"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           npm run deploy
