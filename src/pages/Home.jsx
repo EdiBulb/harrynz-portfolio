@@ -7,7 +7,7 @@ const Home = () => {
       <div className="flex-1 text-center md:text-left space-y-4">
         <h2 className="text-4xl font-bold">Hi There! <span className="text-2xl">👋</span></h2>
         <h1 className="text-4xl md:text-5xl font-bold text-blue-400 animate-fade">
-          I'M HARRY
+          I'M HARRY, 
         </h1>
         <h3 className="text-xl md:text-2xl text-blue-300 animate-fade">
           Developer | Explorer | Creator
