@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
         <li><a href="#education" className="hover:text-blue-500">Education</a></li>
         <li><a href="#certificate" className="hover:text-blue-500">Certificate</a></li>
-        <li><a href="#extra" className="hover:text-blue-500">Extra</a></li>
+        <li><a href="#activity" className="hover:text-blue-500">Activity</a></li>
       </ul>
     </nav>
   );

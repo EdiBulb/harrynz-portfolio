@@ -24,7 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Harry's Portfolio</title>
+    <script>
+(function () {
+  try {
+    const stored = localStorage.getItem('theme');
+    const systemPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const shouldDark = stored ? stored === 'dark' : systemPref;
+    document.documentElement.classList.toggle('dark', shouldDark);
+  } catch (_) {}
+})();
+</script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +50,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- public/index.html의 <head> 안 어디든 -->
+
+
 </html>
