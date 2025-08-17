@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeButtons from "../components/ResumeButtons";
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
         <h3 className="text-xl md:text-2xl text-blue-300 animate-fade">
           Developer | Explorer | Creator
         </h3>
+          <ResumeButtons className="pt-2" />
+
       </div>
 
       {/* image */}
