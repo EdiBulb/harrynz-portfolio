@@ -119,7 +119,7 @@ const Navbar = () => {
                          dark:bg-gray-800 dark:hover:bg-gray-700
                          text-gray-900 dark:text-gray-100 transition"
             >
-              CV
+              View CV
             </a>
             <div className="hidden md:block">
               <ThemeToggle />
