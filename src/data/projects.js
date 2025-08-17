@@ -1,5 +1,5 @@
 // projects 배열
-const projects = [
+export const projects = [
   {
     title: "Intelligent Sports Management Platform (Ongoing)",
     image: "/project_images/CFTI_image.png",
