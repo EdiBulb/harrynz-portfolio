@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import ContactForm from "../components/about/ContactForm";
 
 const About = () => {
+  // ✅ form 표시 여부 상태
+  const [formVisible, setFormVisible] = useState(false);
+  
   return (
 
     <section className="pt-24 pb-12 bg-gray-100 dark:bg-gray-800">
@@ -15,13 +20,20 @@ const About = () => {
 
         {/* 텍스트 소개 */}
         <div>
-          <p className="text-lg leading-relaxed">
-            I'm <span className="font-semibold text-blue-600">Full-stack developer</span> living in New Zealand, passionate about building with React, Node.js, and DevOps tools. I love creating things that work
+          <p className="text-lg leading-relaxed mb-1">
+            I'm <span className="font-semibold text-blue-600 text-xl">Full-stack developer</span> with a strong interest in DevOps and Cloud technologies.
+          </p>
+          <p className="text-lg leading-relaxed mb-4">
+            What excites me the most is creating <span className="font-semibold text-blue-600 text-xl">something meaningful</span>—building solutions that can be applied to real life and solve actual problems. I find great satisfaction in seeing my work make an impact.          
           </p>
 
-          <p className="mt-4 text-lg">
-            I believe that opportunities aren’t given, they’re created.
+          <p className="text-lg leading-relaxed mb-4">
+            I’m also <span className="font-semibold text-blue-600 text-xl">passionate about AI</span> and enjoy experimenting with it to build innovative projects. Beyond coding, I love staying curious about emerging technologies and keeping up with industry trends.          
           </p>
+          <p className="text-lg leading-relaxed">
+            At the heart of it, my motivation comes from a belief that technology can make the world a <span className="font-semibold text-blue-600 text-xl">better place</span> and I want to <span className="font-semibold text-blue-600 text-xl">contribute to that future</span>.          
+          </p>
+          
 
           <p className="mt-4 text-lg italic text-gray-500">
             Outside of coding, I love traveling, video editing, and sharing my story on YouTube 🎥.
@@ -40,13 +52,15 @@ const About = () => {
           <FaGithub size={20} />
           GitHub
         </a>
-        <a
-          href="mailto:gnsqud24@naver.com"
-          className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-500 transition"
-        >
-          <MdEmail size={20} />
-          Email
-        </a>
+        {/* ✅ 클릭하면 form 표시 */}
+          <button
+            onClick={() => setFormVisible((prev) => !prev)}
+            className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-500 transition"
+          >
+            <MdEmail size={20} />
+            {formVisible ? "Email ⬆️" : "Email ⬇️"}
+            
+          </button>
         <a
           href="https://www.youtube.com/@HarryNomad"
           target="_blank"
@@ -57,6 +71,13 @@ const About = () => {
           YouTube
         </a>
       </div>
+
+      {/* ✅ formVisible 이 true일 때만 보여줌 */}
+        {formVisible && (
+          <div className="mt-12">
+            <ContactForm />
+          </div>
+        )}
     </div>
     </section>
 
