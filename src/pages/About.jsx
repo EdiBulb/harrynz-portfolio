@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaChevronDown, FaChevronUp } from "react-icons/fa"; // 리액트 아이콘 사용
 import { MdEmail } from "react-icons/md";
 import ContactForm from "../components/about/ContactForm";
 
@@ -58,7 +58,8 @@ const About = () => {
             className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-500 transition"
           >
             <MdEmail size={20} />
-            {formVisible ? "Email ⬆️" : "Email ⬇️"}
+            <span>Email</span>
+            {formVisible ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />}
             
           </button>
         <a

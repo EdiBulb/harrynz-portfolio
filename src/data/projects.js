@@ -15,7 +15,7 @@ export const projects = [
     ],
     category: "group", // ← 그룹 프로젝트
     links: {
-      // live: "https://your-live.example.com",
+      live: "https://basketball.clubfilipinotauranga.org/",
       video: "https://youtu.be/your-demo-video",
       // code: "https://github.com/you/repo",
     },
@@ -53,27 +53,40 @@ export const projects = [
   {
     title: "Memory Game",
     image: "/project_images/random_memory_game_image.png",
-    description: "Built normal Memory Game with Algorithm.",
+    description: "A browser-based memory card game where players flip cards to find matching pairs within a limited number of attempts. The game features animated card flips, randomized layout, and visual feedback for wins and losses.",
     tech: ["HTML/CSS/JavaScript", "Git"],
-    contribution: "Developed from the scratch",
+    contribution:  [
+      "Loaded card data dynamically from an external JSON file and duplicated it to create matching pairs.",
+      "Randomized card order using the Fisher-Yates shuffle algorithm.",
+      "Dynamically generated card elements and added them to the DOM efficiently using DocumentFragment.",
+      "Managed game state with variables for flipped cards, remaining attempts, and match count.",
+      
+    ],
     category: "personal", // ← 개인 프로젝트
     links: {
       // live: "https://your-live.example.com",
-      video: "https://youtu.be/your-demo-video",
-      // code: "https://github.com/you/repo",
+      video: "https://www.youtube.com/watch?v=b0bwAUQNRH4",
+      code: "https://github.com/EdiBulb/JS-memory-game",
     },
   },
   {
     title: "Flutter Chat App",
     image: "/project_images/chatapp.png",
-    description: "Built Chat App with Flutter",
-    tech: ["Flutter", "Firebase"],
-    contribution: "Developed from the scratch",
+    description: "This is a real-time chat application built with Flutter and Firebase, where users can sign up or log in with email, send and receive messages instantly through Firestore, and enjoy a clean UI with animations and reusable components.",
+    tech: ["Flutter","Dart", "Firebase Authentication", "Cloud Firestore"],
+    contribution:  [
+      "Built a real‑time chat in Flutter using Cloud Firestore streams with server‑side timestamps and ordered queries; implemented a message composer and reversed timeline UI.",      
+      "Implemented email/password auth (sign‑up, login, logout) with FirebaseAuth, loading overlays, and named‑route navigation across Welcome/Login/Register/Chat.",      
+      "Designed message bubble components with author‑aware alignment/coloring and extracted reusable UI (e.g., RoundedButton) and shared styles in constants.dart.",
+      "Added polish with Hero transitions, AnimatedTextKit, and ColorTween to improve perceived performance and brand feel.",
+            
+      
+    ],
     category: "personal", // ← 개인 프로젝트
     links: {
       // live: "https://your-live.example.com",
-      video: "https://youtu.be/your-demo-video",
-      // code: "https://github.com/you/repo",
+      video: "https://www.youtube.com/shorts/RMTGYMcqs_s",
+      code: "https://github.com/EdiBulb/flutter_chat_custom",
     },
   },
 ];

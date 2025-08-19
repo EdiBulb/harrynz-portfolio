@@ -35,23 +35,32 @@ export default function ContactForm() {
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
-        headers: { "Accept": "application/json" },
-        body: new FormData(e.currentTarget), // send the form fields exactly as submitted
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          message: values.message,
+          _subject: "[TEST] New message from portfolio",
+        }),
       });
 
+      // CORS 문제면 여기서 throw 날 수 있음
       const data = await res.json().catch(() => ({}));
 
       if (res.ok) {
         setStatus({ ok: true, msg: "Thanks! Your message has been sent." });
         setValues({ name: "", email: "", message: "" });
-        e.currentTarget.reset(); // reset the actual <form>
       } else {
-        // Formspree returns errors array sometimes
-        const errMsg = data?.errors?.[0]?.message || "Something went wrong. Please try again.";
+        const errMsg = data?.errors?.[0]?.message || "Trouble in the process. please Try again later.";
         setStatus({ ok: false, msg: errMsg });
+        console.error("Formspree error:", res.status, data);
       }
     } catch (err) {
-      setStatus({ ok: false, msg: "Network error. Please try again." });
+      setStatus({ ok: false, msg: "Network Error. (CORS/확장프로그램 가능성) 콘솔을 확인해 주세요." });
+      console.error("Fetch failed:", err);
     } finally {
       setLoading(false);
     }
