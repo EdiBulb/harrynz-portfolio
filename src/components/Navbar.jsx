@@ -110,7 +110,7 @@ const Navbar = () => {
           {/* 우측 액션(데스크탑) + 모바일 햄버거 */}
           <div className="flex items-center gap-2">
             <a
-              href="/resume/harry_resume.pdf"
+              href="/resume/Harry_Kang_Summer_Internship.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-block px-3 py-1.5 rounded-lg text-sm border 
@@ -211,7 +211,7 @@ const Navbar = () => {
           {/* 액션들 */}
           <div className="mt-4 flex items-center gap-2">
             <a
-              href="/resume/harry_resume.pdf"
+              href="/resume/Harry_Kang_Summer_Internship.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 px-3 py-2 rounded-lg text-sm border 

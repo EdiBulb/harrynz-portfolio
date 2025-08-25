@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub, FaYoutube, FaChevronDown, FaChevronUp } from "react-icons/fa"; // 리액트 아이콘 사용
+import { FaGithub, FaYoutube, FaLinkedin, FaChevronDown, FaChevronUp } from "react-icons/fa"; // 리액트 아이콘 사용
 import { MdEmail } from "react-icons/md";
 import ContactForm from "../components/about/ContactForm";
 
@@ -43,6 +43,17 @@ const About = () => {
 
       {/* 소셜 링크 버튼 */}
       <div className="mt-8 flex gap-4 flex-wrap justify-center md:justify-start">
+        {/* ✅ LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/harrykangnz"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+          aria-label="LinkedIn profile (opens in a new tab)"
+        >
+          <FaLinkedin size={20} />
+          LinkedIn
+        </a>
         <a
           href="https://github.com/Edibulb"
           target="_blank"
