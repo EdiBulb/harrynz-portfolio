@@ -1,6 +1,23 @@
 // projects 배열
 export const projects = [
   {
+    title: "Beyond Vision (Hackathon Project)",
+    image: "/project_images/hackathon.jpg",
+    description:
+      "Helping the visually impaired see beyond sight with AI and cultural inclusivity.",
+    tech: ["Django", "Open AI"],
+    contribution: [
+      "Used Open AI API to turn images → text → speech by using Django",
+      "Used business model canvas strategy",
+    ],
+    category: "group", // ← 그룹 프로젝트
+    links: {
+      // live: "https://basketball.clubfilipinotauranga.org/",
+      video: "https://www.youtube.com/watch?v=ChcCAHhWSGo",
+      // code: "https://github.com/you/repo",
+    },
+  },
+  {
     title: "Intelligent Sports Management Platform (Ongoing)",
     image: "/project_images/CFTI_image.png",
     description:
