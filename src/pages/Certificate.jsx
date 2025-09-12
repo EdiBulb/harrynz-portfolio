@@ -2,49 +2,32 @@ import React from "react";
 
 const certificates = [
   {
-    title: "The Complete Flutter Development Bootcamp with Dart, Udemy",
-    provider: "Udemy",
-    period: "2024.03 – 2024.06",
-    image: "/certificates/flutter_udemy.png", // public 폴더 안에 위치
-    description: "Built several Flutter apps including a Chating app and BMI Calculation app.",
-    projects: [
-      {
-        name: "Chating App",
-        link: "https://github.com/your-username/random-menu-app",
-      },
-      {
-        name: "BMI Calculation App",
-        link: "https://github.com/your-username/flutter-quiz-app",
-      },
-    ],
-  },
-  {
-    title: "JavaScript Project: Build a Random Card Memory Game - 2025",
-    provider: "Udemy",
-    period: "2024.05 – 2024.06",
-    image: "/certificates/JavaScript_udemy.png", // public 폴더 안에 위치
-    description: "Built random Card Memory Game",
-    projects: [
-      {
-        name: "Random Card Memory Game",
-        link: "https://github.com/your-username/random-menu-app",
-      },
-      
-    ],
+    title: "Google Generative AI Certificate (Ongoing)",
+    provider: "Google Academy",
+    period: "2025.09 – 2025.12",
+    image: "/certificates/google academy certificate.png", // public 폴더 안에 위치
+    description: "Learning how to apply generative AI for real-world problem solving, covering core concepts, tools, and practical use cases.",
   },
   {
     title: "The Ultimate React Course 2025: React, Next.js, Redux & More",
     provider: "Udemy",
-    period: "2024.06 – 2024.06",
+    period: "2025.06 – 2025.06",
     image: "/certificates/react_udemy.jpg", // public 폴더 안에 위치
     description: "Built several apps including a quiz app and random menu app.",
-    projects: [
-      {
-        name: "On going",
-        link: "https://github.com/your-username/random-menu-app",
-      },
-      
-    ],
+  },
+  {
+    title: "JavaScript Project: Build a Random Card Memory Game - 2025",
+    provider: "Udemy",
+    period: "2025.05 – 2025.06",
+    image: "/certificates/JavaScript_udemy.png", // public 폴더 안에 위치
+    description: "Built random Card Memory Game",
+  },
+  {
+    title: "The Complete Flutter Development Bootcamp with Dart, Udemy",
+    provider: "Udemy",
+    period: "2025.03 – 2025.06",
+    image: "/certificates/flutter_udemy.png", // public 폴더 안에 위치
+    description: "Built several Flutter apps including a Chating app and BMI Calculation app.",
   }
 ];
 
@@ -70,25 +53,6 @@ const Certificate = () => {
             <p className="text-gray-700">{cert.provider}</p>
             <p className="text-sm text-gray-500 italic mb-2">{cert.period}</p>
             <p className="text-gray-700 mb-2">{cert.description}</p>
-            {cert.projects.length > 0 && (
-              <div className="mt-2">
-                <h3 className="text-sm font-semibold">Related Projects:</h3>
-                <ul className="list-disc ml-5 mt-1">
-                  {cert.projects.map((project, i) => (
-                    <li key={i}>
-                      <a
-                        href={project.link}
-                        className="text-blue-500 underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {project.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
         ))}
       </div>
