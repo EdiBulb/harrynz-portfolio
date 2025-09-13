@@ -6,11 +6,11 @@ const educationData = [
     degree: "Master of Software Engineering",
     period: "2024 – 2025 (expected)",
     description:
-      "Studying advanced software development, cloud computing, and full-stack web and mobile app projects. Currently developing real-world portfolio projects using React and Flutter.",
+      "Studying advanced software development, Quantum Computing, Data Analytics, Blockchain and Decentralised Digital Identity, Cloud Security, and Intelligent Transportation Systems.",
   },
   {
     school: "Hongik University (Korea)",
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor of Science in Software Convergence",
     period: "2016 – 2022",
     description:
       "Focused on software fundamentals, data structures, algorithms, and participated in coding competitions and exchange programs in China and Nepal.",

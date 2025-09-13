@@ -6,28 +6,28 @@ const certificates = [
     provider: "Google Academy",
     period: "2025.09 – 2025.12",
     image: "/certificates/google academy certificate.png", // public 폴더 안에 위치
-    description: "Learning how to apply generative AI for real-world problem solving, covering core concepts, tools, and practical use cases.",
+    // description: "Learning how to apply generative AI for real-world problem solving, covering core concepts, tools, and practical use cases.",
   },
   {
     title: "The Ultimate React Course 2025: React, Next.js, Redux & More",
     provider: "Udemy",
     period: "2025.06 – 2025.06",
     image: "/certificates/react_udemy.jpg", // public 폴더 안에 위치
-    description: "Built several apps including a quiz app and random menu app.",
+    // description: "Built several apps including a quiz app and random menu app.",
   },
   {
     title: "JavaScript Project: Build a Random Card Memory Game - 2025",
     provider: "Udemy",
     period: "2025.05 – 2025.06",
     image: "/certificates/JavaScript_udemy.png", // public 폴더 안에 위치
-    description: "Built random Card Memory Game",
+    // description: "Built random Card Memory Game",
   },
   {
     title: "The Complete Flutter Development Bootcamp with Dart, Udemy",
     provider: "Udemy",
     period: "2025.03 – 2025.06",
     image: "/certificates/flutter_udemy.png", // public 폴더 안에 위치
-    description: "Built several Flutter apps including a Chating app and BMI Calculation app.",
+    // description: "Built several Flutter apps including a Chating app and BMI Calculation app.",
   }
 ];
 
