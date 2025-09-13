@@ -49,7 +49,7 @@ export const projects = [
     category: "group", // ← 그룹 프로젝트
     links: {
       // live: "https://your-live.example.com",
-      video: "https://youtu.be/your-demo-video",
+      // video: "https://youtu.be/your-demo-video",
       // code: "https://github.com/you/repo",
     },
   },
@@ -63,7 +63,7 @@ export const projects = [
     category: "group", // ← 그룹 프로젝트
     links: {
       // live: "https://your-live.example.com",
-      video: "https://youtu.be/your-demo-video",
+      // video: "https://youtu.be/your-demo-video",
       // code: "https://github.com/you/repo",
     },
   },
