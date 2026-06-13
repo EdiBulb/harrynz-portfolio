@@ -82,7 +82,7 @@ export const projects = [
     ],
     category: "personal",
     links: {
-      // live: "https://...",
+      live: "https://roamer-khaki.vercel.app/",
       // code: "https://github.com/...",
     },
   },

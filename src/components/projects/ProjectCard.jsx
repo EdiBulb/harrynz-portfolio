@@ -5,8 +5,8 @@ export default function ProjectCard({ project, onOpen }) { // 구조분해 할�
   return (
     //하나의 카드 영역
     <div
-      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-                 rounded-lg p-4 shadow-md hover:shadow-xl transition duration-300 cursor-pointer"
+      className="relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700
+                 rounded-lg p-4 pb-8 shadow-md hover:shadow-xl transition duration-300 cursor-pointer"
       onClick={() => onOpen(project)} // 카드 클릭 시, onOpen 함수 실행하면서 이 project 객체를 부모에게 전달함
     >
       {project.image && ( // 조건부 렌더링: project.image가 있는 경우, <img> 출력
@@ -33,6 +33,7 @@ export default function ProjectCard({ project, onOpen }) { // 구조분해 할�
           {project.category === "group" ? "Group" : "Personal"}
         </span>
       </div>
+      <p className="absolute bottom-3 left-4 text-xs text-blue-500 dark:text-blue-400">Click to see details →</p>
     </div>
   );
 }
