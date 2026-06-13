@@ -4,7 +4,7 @@ const educationData = [
   {
     school: "Yoobee College of Creative Innovation",
     degree: "Master of Software Engineering",
-    period: "2024 – 2025 (expected)",
+    period: "2024 – Aug 2025",
     description:
       "Studying advanced software development, Quantum Computing, Data Analytics, Blockchain and Decentralised Digital Identity, Cloud Security, and Intelligent Transportation Systems.",
   },
@@ -19,8 +19,8 @@ const educationData = [
 
 const Education = () => {
   return (
-    <div className="max-w-4xl mx-auto p-4 mt-10">
-      <h1 className="text-3xl font-bold mb-6 border-b-2 pb-2 border-blue-500">
+    <div className="mt-10">
+      <h1 className="text-3xl font-bold mb-6 border-b-2 pb-2 border-blue-500 text-gray-900 dark:text-white">
         Education
       </h1>
 
@@ -28,12 +28,12 @@ const Education = () => {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="bg-white p-5 rounded-lg shadow-md border-l-4 border-blue-400"
+            className="bg-white dark:bg-gray-800 p-5 rounded-lg shadow-md border-l-4 border-blue-400"
           >
-            <h2 className="text-xl font-semibold text-blue-600">{edu.school}</h2>
-            <p className="text-md text-gray-700 font-medium">{edu.degree}</p>
-            <p className="text-sm text-gray-500 italic mb-2">{edu.period}</p>
-            <p className="text-gray-700">{edu.description}</p>
+            <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{edu.school}</h2>
+            <p className="text-md text-gray-800 dark:text-gray-100 font-semibold">{edu.degree}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2">{edu.period}</p>
+            <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
           </div>
         ))}
       </div>

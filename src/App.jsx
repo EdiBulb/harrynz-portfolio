@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Certificate from "./pages/Certificate";
 import Activity from "./pages/Activities";
@@ -20,6 +21,7 @@ function App() {
         <div className="h-24 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900" />
 
         <div id="about" className="scroll-mt-16"><About/></div>
+        <div id="experience" className="scroll-mt-16"><Experience/></div>
         <div id="projects" className="scroll-mt-16"><Projects/></div>
         <div id="education" className="scroll-mt-16"><Education/></div>
         <div id="certificate" className="scroll-mt-16"><Certificate/></div>

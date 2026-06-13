@@ -18,7 +18,7 @@ export const projects = [
     },
   },
   {
-    title: "Intelligent Sports Management Platform (Ongoing)",
+    title: "Intelligent Sports Management Platform (Capstone Project)",
     image: "/project_images/CFTI_image.png",
     description:
       "The development of a culturally responsive sports management web platform using React, Django, and MySQL, with features like AI-based performance analysis and identity verification.",
@@ -38,7 +38,7 @@ export const projects = [
     },
   },
   {
-    title: "SeamlessStop – Intelligent Bus Stop Automation System",
+    title: "Intelligent Bus Stop Automation System",
     image: "/project_images/SeamlessStop_image.png",
     description:
       "ITS project using GPS to help passengers choose drop-off stops.",
@@ -65,6 +65,25 @@ export const projects = [
       // live: "https://your-live.example.com",
       // video: "https://youtu.be/your-demo-video",
       // code: "https://github.com/you/repo",
+    },
+  },
+  {
+    title: "Roamer – Exploration-Based Running App",
+    image: "/project_images/roamer_image.png",
+    description:
+      "A mobile application that reimagines running as a street-discovery experience rather than a fitness-tracking activity. Built from concept to beta, including branding, landing page, and user validation.",
+    tech: ["React Native", "Expo", "TypeScript", "Mapbox", "AsyncStorage", "Expo Location", "Expo Speech"],
+    contribution: [
+      "Designed and developed a React Native app that generates unique running routes using the Mapbox Directions API.",
+      "Implemented GPS tracking, real-time route navigation, and voice-guided turn-by-turn directions.",
+      "Created a street discovery system that tracks newly explored streets and rewards users with achievement badges.",
+      "Built onboarding flows, run summaries, local persistence, and exploration analytics to improve user engagement.",
+      "Developed the product from concept to beta stage, including branding, landing page creation, waitlist collection, and user validation.",
+    ],
+    category: "personal",
+    links: {
+      // live: "https://...",
+      // code: "https://github.com/...",
     },
   },
   {

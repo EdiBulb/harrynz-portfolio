@@ -5,6 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 const SECTIONS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
   { id: "certificate", label: "Certificate" },
@@ -109,18 +110,6 @@ const Navbar = () => {
 
           {/* 우측 액션(데스크탑) + 모바일 햄버거 */}
           <div className="flex items-center gap-2">
-            <a
-              href="/resume/Harry_Kang_Summer_Internship.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-block px-3 py-1.5 rounded-lg text-sm border 
-                         border-gray-300 dark:border-gray-700
-                         bg-white hover:bg-gray-100
-                         dark:bg-gray-800 dark:hover:bg-gray-700
-                         text-gray-900 dark:text-gray-100 transition"
-            >
-              View CV
-            </a>
             <div className="hidden md:block">
               <ThemeToggle />
             </div>
@@ -210,19 +199,6 @@ const Navbar = () => {
 
           {/* 액션들 */}
           <div className="mt-4 flex items-center gap-2">
-            <a
-              href="/resume/Harry_Kang_Summer_Internship.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 px-3 py-2 rounded-lg text-sm border 
-                         border-gray-300 dark:border-gray-700
-                         bg-white hover:bg-gray-100
-                         dark:bg-gray-800 dark:hover:bg-gray-700
-                         text-gray-900 dark:text-gray-100 transition text-center"
-              onClick={() => setOpen(false)}
-            >
-              View CV
-            </a>
             <ThemeToggle />
           </div>
         </nav>

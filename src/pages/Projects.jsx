@@ -44,8 +44,8 @@ export default function Projects() {
   const items = tab === "group" ? grouped.group : grouped.personal;
 
   return (
-    <div className="max-w-5xl mx-auto p-4 mt-10">
-      <h1 className="text-3xl font-bold mb-6 border-b-2 pb-2 border-blue-500">
+    <div className="mt-10">
+      <h1 className="text-3xl font-bold mb-6 border-b-2 pb-2 border-blue-500 text-gray-900 dark:text-white">
         My Projects
       </h1>
 
