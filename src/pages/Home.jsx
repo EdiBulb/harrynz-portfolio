@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 
-const ROLES = ["Full-Stack Developer", "Content Creator", "DevOps Enthusiast", "AI Explorer"];
+const ROLES = ["Full-Stack Developer", "Content Creator", "AI Explorer"];
 
 const useTypewriter = (words, { typingMs = 90, deletingMs = 45, pauseMs = 1500 } = {}) => {
   const [wordIndex, setWordIndex] = useState(0);

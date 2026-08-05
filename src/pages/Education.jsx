@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "../components/Reveal";
 
 const educationData = [
   {
@@ -26,15 +27,14 @@ const Education = () => {
 
       <div className="space-y-6">
         {educationData.map((edu, index) => (
-          <div
-            key={index}
-            className="bg-white dark:bg-gray-800 p-5 rounded-lg shadow-md border-l-4 border-blue-400"
-          >
-            <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{edu.school}</h2>
-            <p className="text-md text-gray-800 dark:text-gray-100 font-semibold">{edu.degree}</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2">{edu.period}</p>
-            <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
-          </div>
+          <Reveal key={index} delay={index * 100}>
+            <div className="bg-white dark:bg-gray-800 p-5 rounded-lg shadow-md border-l-4 border-blue-400">
+              <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{edu.school}</h2>
+              <p className="text-md text-gray-800 dark:text-gray-100 font-semibold">{edu.degree}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2">{edu.period}</p>
+              <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
+            </div>
+          </Reveal>
         ))}
       </div>
     </div>

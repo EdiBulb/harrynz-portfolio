@@ -3,6 +3,7 @@ import { projects as raw } from "../data/projects";
 import Tabs from "../components/projects/Tabs";
 import ProjectCard from "../components/projects/ProjectCard";
 import ProjectModal from "../components/projects/ProjectModal";
+import Reveal from "../components/Reveal";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -57,11 +58,9 @@ export default function Projects() {
 
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
         {items.map((project, i) => (
-          <ProjectCard
-            key={`${project.title}-${i}`}
-            project={project}
-            onOpen={setSelectedProject}
-          />
+          <Reveal key={`${project.title}-${i}`} delay={(i % 3) * 100}>
+            <ProjectCard project={project} onOpen={setSelectedProject} />
+          </Reveal>
         ))}
       </div>
 

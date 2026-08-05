@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Reveal from "../components/Reveal";
 
 const experiences = [
   {
@@ -117,32 +118,33 @@ const Experience = () => {
 
       <div className="space-y-8">
         {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-md border-l-4 border-blue-400 overflow-hidden
-                       cursor-pointer hover:shadow-xl transition duration-300"
-            onClick={() => setSelected(exp)}
-          >
-            <div className="flex flex-col md:flex-row">
-              {exp.image && (
-                <div className="md:w-48 flex-shrink-0">
-                  <img
-                    src={exp.image}
-                    alt={`${exp.company} workplace`}
-                    className="w-full h-48 md:h-full object-cover"
-                    onError={(e) => { e.target.style.display = "none"; }}
-                  />
+          <Reveal key={index} delay={index * 100}>
+            <div
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md border-l-4 border-blue-400 overflow-hidden
+                         cursor-pointer hover:shadow-xl transition duration-300"
+              onClick={() => setSelected(exp)}
+            >
+              <div className="flex flex-col md:flex-row">
+                {exp.image && (
+                  <div className="md:w-48 flex-shrink-0">
+                    <img
+                      src={exp.image}
+                      alt={`${exp.company} workplace`}
+                      className="w-full h-48 md:h-full object-cover"
+                      onError={(e) => { e.target.style.display = "none"; }}
+                    />
+                  </div>
+                )}
+                <div className="p-5 flex-1">
+                  <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{exp.company}</h2>
+                  <p className="text-md font-medium text-gray-800 dark:text-gray-200">{exp.role}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-3">{exp.period}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{exp.description}</p>
+                  <p className="mt-3 text-xs text-blue-500 dark:text-blue-400">Click to see details →</p>
                 </div>
-              )}
-              <div className="p-5 flex-1">
-                <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{exp.company}</h2>
-                <p className="text-md font-medium text-gray-800 dark:text-gray-200">{exp.role}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-3">{exp.period}</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{exp.description}</p>
-                <p className="mt-3 text-xs text-blue-500 dark:text-blue-400">Click to see details →</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         ))}
       </div>
 
