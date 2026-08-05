@@ -26,6 +26,22 @@ const experiences = [
     ],
     tech: ["TypeScript", "NestJS", "Prisma ORM", "PostgreSQL", "Jest", "Agile"],
   },
+  {
+    company: "Club Filipino Tauranga Inc.",
+    role: "Software Engineer Intern",
+    period: "Apr 2025 – Jul 2025",
+    image: "/project_images/CFTI_image.png",
+    description:
+      "Developed the Intelligent Sports Management Platform (Capstone Project), a culturally responsive sports management web platform using React, Django, and MySQL, with features like AI-based performance analysis and identity verification.",
+    tech: ["React.js", "Django", "MySQL", "REST API", "Tailwind CSS", "Axios", "Agile"],
+    keyContributions: [
+      "Designed and implemented a scalable backend deployment architecture using Gunicorn + Nginx on a Linux-based VPS",
+      "Configured systemd unit files for Gunicorn to manage application lifecycles and ensure automatic startup on system boot",
+      "Mapped domain (api.ptbsports.org) using Namecheap DNS and implemented SSL encryption via Let's Encrypt & Certbot",
+      "Authored a full Disaster Recovery Plan (DRP) with defined RTO/RPO metrics",
+      "Set up and tested Prometheus + Grafana stack locally to monitor system health and simulate Slack alert notifications",
+    ],
+  },
 ];
 
 function ExperienceModal({ exp, onClose }) {
@@ -56,8 +72,8 @@ function ExperienceModal({ exp, onClose }) {
           />
         )}
 
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{exp.company}</h2>
-        <p className="text-md font-medium text-blue-600 dark:text-blue-400 mt-1">{exp.role}</p>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{exp.role}</h2>
+        <p className="text-md font-medium text-blue-600 dark:text-blue-400 mt-1">{exp.company}</p>
         <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-4">{exp.period}</p>
 
         <p className="text-gray-700 dark:text-gray-300 mb-4">{exp.description}</p>
@@ -136,8 +152,8 @@ const Experience = () => {
                   </div>
                 )}
                 <div className="p-5 flex-1">
-                  <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{exp.company}</h2>
-                  <p className="text-md font-medium text-gray-800 dark:text-gray-200">{exp.role}</p>
+                  <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{exp.role}</h2>
+                  <p className="text-md font-medium text-gray-800 dark:text-gray-200">{exp.company}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-3">{exp.period}</p>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">{exp.description}</p>
                   <p className="mt-3 text-xs text-blue-500 dark:text-blue-400">Click to see details →</p>
