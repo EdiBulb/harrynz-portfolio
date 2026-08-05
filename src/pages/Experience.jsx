@@ -21,7 +21,7 @@ const experiences = [
       "Built comprehensive Jest unit test suites with 95%+ code coverage, ensuring feature reliability",
       "Optimised database queries by replacing JOIN operations with direct lookups, improving performance",
       "Designed and implemented a role-based authorisation system (CANCEL_DISBURSAL_OFFICER role) for application cancellations at disbursement stage",
-      "Reduced operational overhead by 100% — eliminated ~55 manual monthly database requests",
+      "Reduced operational overhead by 100%, eliminating ~55 manual monthly database requests",
     ],
     tech: ["TypeScript", "NestJS", "Prisma ORM", "PostgreSQL", "Jest", "Agile"],
   },
