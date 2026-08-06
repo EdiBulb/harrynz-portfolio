@@ -31,11 +31,7 @@ export const projects = [
       "Set up and tested Prometheus + Grafana stack locally to monitor system health and simulate Slack alert notifications",
     ],
     category: "group", // ← 그룹 프로젝트
-    links: {
-      live: "https://basketball.clubfilipinotauranga.org/",
-      video: "https://youtu.be/your-demo-video",
-      // code: "https://github.com/you/repo",
-    },
+    links: {},
   },
   {
     title: "Intelligent Bus Stop Automation System",
