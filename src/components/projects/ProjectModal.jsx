@@ -14,7 +14,7 @@ export default function ProjectModal({ project, onClose }) {
 
   const yt = video ? getYouTubeEmbed(video) : null;
   const isFile = video ? isVideoFile(video) : false;
-  const shouldShowDemo = (!live && video) || showDemo;
+  const shouldShowDemo = showDemo;
 
   const contribList = Array.isArray(project.contribution)
     ? project.contribution

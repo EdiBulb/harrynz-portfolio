@@ -87,7 +87,7 @@ const Navbar = () => {
           <a
             href="#home"
             onClick={scrollTo("home")}
-            className="font-semibold text-gray-800 dark:text-white tracking-tight"
+            className="font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
           >
             Harry’s Portfolio
           </a>

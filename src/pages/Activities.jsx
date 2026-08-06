@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../components/Reveal";
+import InfoCard from "../components/InfoCard";
 
 const activities = [
   {
@@ -45,9 +46,6 @@ const activities = [
     description:
       "Participated in a volunteer program in Nepal, teaching children and helping with community projects. This experience sparked my interest in social contribution.",
   },
-  
-  
-  
 ];
 
 const Activity = () => {
@@ -60,20 +58,14 @@ const Activity = () => {
       <div className="grid gap-6 md:grid-cols-2">
         {activities.map((act, index) => (
           <Reveal key={index} delay={(index % 4) * 100}>
-            <div className="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-              <img
-                src={act.image}
-                alt={act.title}
-                className={`w-full h-48 object-cover ${
-                  act.image.includes("harry_ThinkAThon") ? "object-top" : ""
-                }`}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{act.title}</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2">{act.year}</p>
-                <p className="text-gray-600 dark:text-gray-300">{act.description}</p>
-              </div>
-            </div>
+            <InfoCard
+              image={act.image}
+              imageAlt={act.title}
+              imageClassName={act.image.includes("harry_ThinkAThon") ? "object-top" : ""}
+              title={act.title}
+              meta={act.year}
+              description={act.description}
+            />
           </Reveal>
         ))}
       </div>

@@ -137,7 +137,6 @@ export const projects = [
     category: "personal", // ← 개인 프로젝트
     links: {
       // live: "https://your-live.example.com",
-      video: "https://www.youtube.com/shorts/RMTGYMcqs_s",
       code: "https://github.com/EdiBulb/flutter_chat_custom",
     },
   },

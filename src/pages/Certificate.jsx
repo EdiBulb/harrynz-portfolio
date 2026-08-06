@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../components/Reveal";
+import InfoCard from "../components/InfoCard";
 
 const certificates = [
   {
@@ -35,17 +36,15 @@ const Certificate = () => {
       <div className="grid gap-6 md:grid-cols-2">
         {certificates.map((cert, index) => (
           <Reveal key={index} delay={index * 100}>
-            <div className="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
-              <img
-                src={cert.image}
-                alt={`${cert.title} certificate`}
-                className="w-full h-48 object-contain mb-4"
-              />
-              <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{cert.title}</h2>
-              <p className="text-gray-800 dark:text-gray-100 font-medium">{cert.provider}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2">{cert.period}</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">{cert.description}</p>
-            </div>
+            <InfoCard
+              image={cert.image}
+              imageAlt={`${cert.title} certificate`}
+              imageClassName="object-contain bg-white"
+              title={cert.title}
+              subtitle={cert.provider}
+              meta={cert.period}
+              description={cert.description}
+            />
           </Reveal>
         ))}
       </div>
